@@ -30,7 +30,7 @@ class AutoReact extends SubModule {
    * @param {Discord~Message} msg Message that was sent.
    */
   _messageHandler(msg) {
-    if (msg.channel.id !== '728762339666427905') return;
+    if (msg.channel.id !== auth.specialChannelId) return;
     const emoji = '👍';
     msg.react(emoji);
   }
